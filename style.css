@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('pictures/bg-green.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.password-input {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Neuer Container für Input und Button */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.item-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 0;
+  min-width: 0; /* Verhindert Überlauf auf mobilen Geräten */
+}
+
+/* Allgemeine Button-Styles */
+.submit-btn {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 120px; /* Minimale Breite für Buttons */
+  max-width: 200px; /* Maximale Breite für Buttons */
+}
+
+/* Spezifische Styles für den Login-Button */
+.login-page .submit-btn {
+  width: 200px; /* Feste Breite für den Login-Button */
+  margin: 0 auto; /* Zentriert den Button */
+}
+
+.submit-btn:hover {
+  background: #45a049;
+}
+
+.bucket-list {
+  display: none;
+}
+
+.list-items {
+  list-style: none;
+}
+
+.list-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.menu-btn:hover {
+  background: #444;
+}
+
+.binary-animation {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  color: #0f0;
+  font-family: monospace;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+h1, h2 {
+  color: #333;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.login-page h1 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.list-item span {
+  font-size: 16px;
+}
+
+/* Verbesserte Responsive Design Anpassungen */
+@media (max-width: 768px) {
+  .container {
+      margin: 10px;
+      padding: 15px;
+  }
+
+  .input-container {
+      flex-direction: row; /* Behält die horizontale Ausrichtung bei */
+      gap: 10px;
+      width: 100%;
+  }
+
+  .item-input {
+      min-width: 0; /* Erlaubt dem Input zu schrumpfen */
+  }
+
+  .submit-btn {
+      min-width: 100px; /* Kleinere minimale Breite auf mobilen Geräten */
+      padding: 10px 15px; /* Etwas kleinere Polsterung */
+  }
+
+  /* Login-Button bleibt auch auf mobilen Geräten formatiert */
+  .login-page .submit-btn {
+      width: 200px;
+      max-width: 80%; /* Verhindert zu breite Buttons auf sehr kleinen Geräten */
+  }
+}
+
+/* Zusätzliche Anpassungen für sehr kleine Bildschirme */
+@media (max-width: 480px) {
+  .input-container {
+      gap: 5px; /* Noch kleinerer Abstand zwischen Elementen */
+  }
+
+  .submit-btn {
+      min-width: 80px; /* Noch kleinere minimale Breite */
+      font-size: 14px; /* Kleinere Schriftgröße */
+  }
+
+  .password-input {
+      width: 80%; /* Responsive Breite für das Passwort-Feld */
+      max-width: 200px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Bucket List App</title>
+    <link rel="stylesheet" href="faq_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Häufige Fragen (FAQ)</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question">Wieso habe ich das hier gemacht?</div>
+            <div class="faq-answer">weil ich dich liebe.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Wie können wir das benutzen</div>
+            <div class="faq-answer">Es sollte folgendermaßen funktionieren:
+                1: Wir beide schreiben rein was wir dieses Jahr alles machen wollen.
+                2: Sobald wir das gemacht haben können wir das Item abhacken.
+                3: Beim Abhacken müssen wir einen kleinen Text drunter schreiben und ein Bild hochladen.
+                4: In genau einem Jahr hbaen wir wunderbare Erinnerunge, an das was wir geschafft haben.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Ist die Seite fertig?</div>
+            <div class="faq-answer">Absolut nicht! Da musst du mir noch ein wenig Zeit geben. Ich muss noch eine Datenbank ranhängen und alle rechtschreibfehler rausFischern </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Was liebe ich an dir ?</div>
+          <div class="faq-answer">Deine Augen. Da verlier ich mich jeden Tag neu drin!</div>
+       </div>
+
+       <div class="faq-item">
+        <div class="faq-question">Was war mein schönster Moment in unseren ersten gemeinsamen Jahr ?</div>
+        <div class="faq-answer">Der Linz Trip, dieses sorgenlose rumgetanze und rumgeschmuse </div>
+       </div>
+
+       <div class="faq-item">
+        <div class="faq-question">Welche Eigenschaft liebe ich an dir ?</div>
+        <div class="faq-answer">Du bist ganz oft so sorgendlos und denkst nicht viel nach. Du lebst einfach im hier und jetzt, daran beneid ich dich so sehr. Das gepaart mit deinem unglaublichen lebendigen Charakter geben mir den REst <3 lieb di</div>
+       </div>
+
+       <div class="faq-item">
+          <div class="faq-question">Was liebe ich an uns?</div>
+          <div class="faq-answer">Ich konnte mir nie vorstellen das ich mit einer PErson so viel Spaß haben kann. Wir verbringen zusammen die schönsten Tage und die schönsten Nächte. Die Zeit mit dir bleibt einfach stehen </div>
+       </div>
+
+       <div class="faq-item">
+         <div class="faq-question">Was gibt es zum Essen</div>
+         <div class="faq-answer">Gut n Ort zu haben wo solche unglaublich grundlegenden Fragen drin stehen. Wir wissens meistens nicht, aber hier würde ich mal vorschlagen dass ich mich drum kümmer #freefooddecision</div>
+       </div>
+          
+        <a href="index.html" class="menu-btn">Zur Bucketlist</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

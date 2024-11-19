@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket List App - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page" id="loginPage">
+        <h1>Welcome!</h1>
+        <input type="password" class="password-input" id="passwordInput" placeholder="Enter password">
+        <button class="submit-btn" onclick="checkPassword()">Login</button>
+    </div>
+
+    <div class="bucket-list" id="bucketList">
+        <a href="faq.html" class="menu-btn">FAQ</a>
+        <div class="container">
+            <h2>Bucket List 2024</h2>
+            <input type="text" class="item-input" id="newItem" placeholder="Neuen Wunsch hinzufügen">
+            <button class="submit-btn" onclick="addItem()">Hinzufügen</button>
+            <ul class="list-items" id="itemsList"></ul>
+        </div>
+    </div>
+
+    <div class="binary-animation" id="binaryAnimation"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
