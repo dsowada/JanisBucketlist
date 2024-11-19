@@ -21,7 +21,7 @@ function showBinaryAnimation() {
   // Einfache binäre Blumenanimation
   let flowers = '';
   for (let i = 0; i < 100; i++) {
-      flowers += '1010 🌸 0101<br>';
+      flowers += '1010  🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸0101<br>';
   }
   animation.innerHTML = flowers;
 
