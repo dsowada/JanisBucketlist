@@ -5,30 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bucket List App - Login</title>
     <link rel="stylesheet" href="style.css">
-    <script>const firebaseConfig = {
-
-        apiKey: "AIzaSyAIBVRnJW1sEL18Dd3OSrWHQ1hiRrguWfY",
-      
-        authDomain: "janisbucketlist.firebaseapp.com",
-      
-        projectId: "janisbucketlist",
-      
-        storageBucket: "janisbucketlist.firebasestorage.app",
-      
-        messagingSenderId: "1037956310526",
-      
-        appId: "1:1037956310526:web:9af7fa7da5072689eaccaf",
-      
-        measurementId: "G-C781G816TX"
-      
-      };
-      
-      
-      // Initialize Firebase
-      
-      const app = initializeApp(firebaseConfig);
-      
-      const analytics = getAnalytics(app);</script>
 </head>
 <body>
     <div class="login-page" id="loginPage">
@@ -36,12 +12,6 @@
         <input type="password" class="password-input" id="passwordInput" placeholder="Enter password">
         <button class="submit-btn" onclick="checkPassword()">Login</button>
     </div>
-
-    //test
-    
-    <h1>Speichere Daten in Firestore</h1>  
-    <input type="text" id="textInput" placeholder="Gib deinen Text ein">  
-    <button onclick="saveText()">Speichern</button> 
 
     <div class="bucket-list" id="bucketList">
         <a href="faq.html" class="menu-btn">FAQ</a>
