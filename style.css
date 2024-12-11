@@ -4,14 +4,9 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-.welcome-message {
-  font-family: 'Pacifico', cursive;
-  font-size: 2em;
-  color: #333; /* Wähle eine Farbe, die sich abhebt */
-}
 
 body {
-  background-image: url('bg-green.jpg');
+  background-image: url('pictures/bg-green.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
